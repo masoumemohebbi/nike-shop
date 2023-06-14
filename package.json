@@ -1,0 +1,29 @@
+{
+  "name": "nike-shop",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev-tw": "postcss ./src/css/tailwind_input.css -o ./public/build/tailwind_output.css --watch",
+    "prod": "cross-env NODE_ENV=production postcss ./src/css/tailwind_input.css -o ./public/build/tailwind_output.css"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "autoprefixer": "^10.4.14",
+    "postcss-cli": "^10.1.0",
+    "postcss-load-config": "^4.0.1",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.9"
+  },
+  "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "cssnano": "^6.0.1"
+  }
+}
